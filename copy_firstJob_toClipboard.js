@@ -1,5 +1,8 @@
 //lets build something together!!
 
+/*/
+------- follow along at ------>  https://youtu.be/lrgVmDIn-XI
+/*/
 //today we will learn how to copy an HTML element to your clipboard. 
 
 //javascript has a built-in function which will copy highlighted/selected text within a webpage to your clipboard, but that is not helpful for anything I need. document.execCommand("copy");
