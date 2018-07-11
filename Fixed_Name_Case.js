@@ -2,6 +2,9 @@
 this will fix firstname lastname to be Firstname Lastname.
 This was built for those who are annoyed with undercase names
 works on LinkedIn, or LinkedIn Recruiter
+
+-------- follow along at -------> https://youtu.be/JmxQl6jJXCo
+
 /*/
 
 var url = window.location.href;
