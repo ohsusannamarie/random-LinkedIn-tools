@@ -1,3 +1,5 @@
+//video rebuild at https://youtu.be/kwVfYG2BnR0
+
 function grouped(e, n){
 	if(e != null){
 	return e[n].toString();
