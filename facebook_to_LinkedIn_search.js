@@ -17,7 +17,7 @@ for(w=0; w<worker.length; w++){
 	var job = grouped(/.+?at\s(.+)/ig.exec(worker[w].parentNode.innerText), 1);
 	workArr.push(job);
 }
-var co = '&company='+ boolOr(workArr).replace(/\s+/g, "%20")
+var co = '&company='+ boolOr(workArr).replace(/\s+/g, "%20");
 var fullname = document.getElementById("fb-timeline-cover-name").innerText;
 var fn = 'firstName=' + grouped(/^([a-zA-Z]+\S*)\s/.exec(fullname), 1);
 var ln = '&lastName=' +/[a-zA-Z]+\S*[a-zA-Z]*$/.exec(fullname);
