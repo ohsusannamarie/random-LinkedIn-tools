@@ -8,7 +8,7 @@ function grouped(e, n){ //this function handles our regular expression groups
 
 function switcheroo(){ //this function handles the "a" tag elements we will pass through from the Array.from() function at the bottom of this script. 
     
-  var regXProfName = /\b[a-zA-Z]*\S+[a-zA-Z]\b/g; //this regex will match whole words. \b is a word boundary. [a-zA-Z]* will match zero or more letters (this does not include special chars like "é"). \S+ will match any non-whitespace chars (we use this to account for special chars like "é".  
+  var regXProfName = /\b[a-zA-Z]*\S+[a-zA-Z]*/g; //this regex will match whole words. \b is a word boundary. [a-zA-Z]* will match zero or more letters (this does not include special chars like "é"). \S+ will match any non-whitespace chars (we use this to account for special chars like "é".  
     
   var regXjunker = /\d|See More|replie|div |show older|View Details|activity log|Create|\bnew\b|friend/ig;//this regex will be used to ignore the links which are not names.
     
