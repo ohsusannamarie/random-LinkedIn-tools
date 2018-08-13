@@ -1,4 +1,4 @@
-var webAppURL = "yourappURLgoesHere';
+var webAppURL = "yourappURLgoesHere";
 function grouped(e, n) {
   if (e != null) {
     return e[n].toString();
