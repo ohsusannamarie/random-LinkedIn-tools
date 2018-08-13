@@ -1,11 +1,4 @@
 var webAppURL = "yourappURLgoesHere";
-function grouped(e, n) {
-  if (e != null) {
-    return e[n].toString();
-  } else {
-    return "";
-  }
-}
 
 var prodElm = parseInt(grouped(/^(.+?)\s*profile/.exec(document.getElementsByClassName("me-wvmp-views__profile-views Sans-13px-black-55% pr5")[0].innerText), 1));
 
@@ -19,8 +12,9 @@ function timedScroller(num) {
 }
 
 for (i = 0; i < numScrollEventsNeeded; i++) {
-  timedScroller(i * 1900);
+  timedScroller(i * 1000);
 }
+
 
 function grouped(e, n) {
   if (e != null) {
@@ -97,10 +91,8 @@ setTimeout(() => {
 
   }
 
-  for (a in arrays) {
+  for (a=0; a<(arrays.length); a++) {
     var sendthis = encodeURIComponent('[' + arrays[a].toString() + ']');
-    console.log('[' + arrays[a].toString() + ']')
     timedPageOpen(webAppURL+'?out=' + sendthis, (a * 533));
-
   }
-}, ((numScrollEventsNeeded * 1900) + 1333));
+}, ((numScrollEventsNeeded * 1001) + 1333));
