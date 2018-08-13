@@ -1,3 +1,11 @@
+/*/
+You only need the automatic scroller on the first execution if you plan to run this regularly. 
+Delete the following lines if you do not want the autoScroll-to-end:
+lines 11-25, line 94, line 106
+The apps script currently ignores adding new rows if the profile link already exists within the spreadsheet. 
+I started building a smarter system to add the person again if they view the profile multiple times, but it is not ready.
+Also, be sure to delete these comments before converting to a bookmarklet. 
+/*/
 var webAppURL = "yourappURLgoesHere";
 
 var prodElm = parseInt(grouped(/^(.+?)\s*profile/.exec(document.getElementsByClassName("me-wvmp-views__profile-views Sans-13px-black-55% pr5")[0].innerText), 1));
