@@ -1,3 +1,4 @@
+var webAppURL = "yourappURLgoesHere';
 function grouped(e, n) {
   if (e != null) {
     return e[n].toString();
@@ -99,7 +100,7 @@ setTimeout(() => {
   for (a in arrays) {
     var sendthis = encodeURIComponent('[' + arrays[a].toString() + ']');
     console.log('[' + arrays[a].toString() + ']')
-    timedPageOpen('https://script.google.com/macros/s/AKfycbz2sDRTJ4OqpkXSlJxsD_fRPpzLCuSyxYEvqIJ5abP_KiVo7W4/exec?out=' + sendthis, (a * 533));
+    timedPageOpen(webAppURL+'?out=' + sendthis, (a * 533));
 
   }
 }, ((numScrollEventsNeeded * 1900) + 1333));
