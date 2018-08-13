@@ -1,3 +1,6 @@
+/*/
+install guide: https://youtu.be/NcTaR9hfoTI
+/*/
 var yourSheetId = 'ReplaceTHISwithYOURsheetId';
 var yourSheetName = "Sheet1";
 var ss = SpreadsheetApp.openById(yourSheetId);
